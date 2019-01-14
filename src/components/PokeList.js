@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Pokemon from "./Pokemon";
 
 class PokeList extends Component {
   render() {
@@ -7,16 +8,14 @@ class PokeList extends Component {
     return (
       <ul>
         {pokemon.map(item => {
+          const { id, url, name, types } = item;
           return (
-            <li key={item.id}>
-              <img src={item.url} alt="" />
-              <h2>{item.name}</h2>
-              <ul>
-                {item.types.map((type, i) => {
-                  return <li key={i}>{type}</li>;
-                })}
-              </ul>
-            </li>
+            <Pokemon
+              key={id}
+              url={url}
+              name={name}
+              types={types}
+            />
           );
         })}
       </ul>
