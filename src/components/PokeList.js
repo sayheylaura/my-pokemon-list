@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Pokemon from "./Pokemon";
+import '../pokeList.css'
 
 class PokeList extends Component {
   render() {
     const { pokemon } = this.props;
     return (
-      <ul>
+      <ul className="app__card-list">
         {pokemon.map(item => {
           const { id, url, name, types } = item;
           return (

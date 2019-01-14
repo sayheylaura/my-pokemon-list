@@ -13,7 +13,7 @@ class App extends Component {
     const { pokemon } = this;
     return (
       <div className="App">
-        <h1>Mi lista de pokemon</h1>
+        <h1 className="app__title">Mi lista de pokemon</h1>
         <PokeList pokemon={pokemon} />
       </div>
     );
