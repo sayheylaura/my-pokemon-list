@@ -24,7 +24,13 @@ class PokeList extends Component {
 }
 
 PokeList.propTypes = {
-  pokemon: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired
+  pokemon: PropTypes.arrayOf(
+    PropTypes.shape({
+      url: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      types: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
+    })
+  ).isRequired
 };
 
 export default PokeList;
