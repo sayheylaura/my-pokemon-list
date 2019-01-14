@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import PokeList from "./components/PokeList";
 
 const pokemon = [
   {
@@ -95,21 +96,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Mi lista de pokemon</h1>
-        <ul>
-          {pokemon.map(item => {
-            return (
-              <li key={item.id}>
-                <img src={item.url} alt="" />
-                <h2>{item.name}</h2>
-                <ul>
-                  {item.types.map((type, i) => {
-                    return <li key={i}>{type}</li>;
-                  })}
-                </ul>
-              </li>
-            );
-          })}
-        </ul>
+        <PokeList pokemon={pokemon} />
       </div>
     );
   }
