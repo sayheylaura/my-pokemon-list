@@ -1,7 +1,33 @@
+.item__image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .item__name {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  width: 100%;
   text-align: center;
-  padding: 5px;
+  text-transform: capitalize;
+}
+
+.item__types-list {
+  padding: 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.item__types-item {
+  padding: 3px;
+  border-radius: 8px;
+  background-color: rgb(173, 172, 172);
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
 }
