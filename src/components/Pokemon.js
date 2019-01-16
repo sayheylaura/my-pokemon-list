@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
+import "./Pokemon.css";
 
 class Pokemon extends Component {
   render() {
@@ -7,7 +8,7 @@ class Pokemon extends Component {
     return (
       <Fragment>
         <img src={url} alt={name} />
-        <h2>{name}</h2>
+        <h2 className="item__name">{name}</h2>
         <ul>
           {types.map((type, i) => (
             <li key={i}>{type}</li>

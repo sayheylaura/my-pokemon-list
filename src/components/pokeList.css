@@ -1,4 +1,17 @@
 .app__card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+}
+
+.card-list__item {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(194, 240, 247, 0.342);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

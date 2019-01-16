@@ -11,12 +11,12 @@ class PokeList extends Component {
         {pokemon.map(item => {
           const { id, url, name, types } = item;
           return (
-            <li key={id}>
+            <li key={id} className="card-list__item">
               <Pokemon
                 url={url}
                 name={name}
                 types={types}
-              />;
+              />
             </li>
           );
         })}
