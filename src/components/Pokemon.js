@@ -6,7 +6,7 @@ class Pokemon extends Component {
     const { url, name, types } = this.props;
     return (
       <Fragment>
-        <img src={url} alt="" />
+        <img src={url} alt={name} />
         <h2>{name}</h2>
         <ul>
           {types.map((type, i) => {
