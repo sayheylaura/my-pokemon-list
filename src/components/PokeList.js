@@ -12,7 +12,11 @@ class PokeList extends Component {
           const { id, url, name, types } = item;
           return (
             <li key={id}>
-              <Pokemon url={url} name={name} types={types} />;
+              <Pokemon
+                url={url}
+                name={name}
+                types={types}
+              />;
             </li>
           );
         })}

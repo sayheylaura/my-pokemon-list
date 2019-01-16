@@ -9,9 +9,9 @@ class Pokemon extends Component {
         <img src={url} alt={name} />
         <h2>{name}</h2>
         <ul>
-          {types.map((type, i) => {
-            return <li key={i}>{type}</li>;
-          })}
+          {types.map((type, i) => (
+            <li key={i}>{type}</li>
+          ))}
         </ul>
       </Fragment>
     );
