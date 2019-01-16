@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 
 class Pokemon extends Component {
   render() {
     const { url, name, types } = this.props;
     return (
-      <li>
+      <Fragment>
         <img src={url} alt="" />
         <h2>{name}</h2>
         <ul>
@@ -13,7 +13,7 @@ class Pokemon extends Component {
             return <li key={i}>{type}</li>;
           })}
         </ul>
-      </li>
+      </Fragment>
     );
   }
 }
