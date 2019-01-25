@@ -1,4 +1,4 @@
-# Mid-term evaluation exercise for the second sprint in Adalab
+# Mid-term evaluation exercise for the third sprint in Adalab
 
 This is a mid-term evaluation exercise for the third sprint in [Adalab](https://adalab.es/). The main goal of this exercise was to self-assess my knowledge and skills in basic React after one week learning to use this framework. I received my teacher's feedback on my work and had the chance to improve the exercise.
 
